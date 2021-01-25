@@ -1,0 +1,251 @@
+.fashun
+    padding-bottom: 135px
+    border: none
+    padding-top: 13px
+    &-container
+        max-width: 1140px
+        margin: auto
+    &-wrapper
+        display: flex
+    &-slider
+        margin-top: 120px
+        width: 662px
+        height: 475px
+        &__item
+            display: flex
+            position: relative
+        &__button
+            position: absolute
+            transform: translateX(-50%)
+            width: 54px
+            height: 56px
+            right: 30%
+            background-repeat: no-repeat
+            background-size: 10px
+            background-position: center
+            outline: none
+            background-color: transparent
+            cursor: pointer
+            z-index: 300
+            margin: 0
+            padding: 0
+            top: 348px
+            &--prev
+                border-radius: 50%
+                background-color: #ffffff
+                background-image: url(../img/prev.svg)
+                border: solid 1px #959EAD
+                left: 18px
+            &--next
+                border-radius: 50%
+                background-color: #ffffff
+                background-image: url(../img/next__arrow.svg)
+                border: solid 1px #183B56
+                left: 95px
+.history
+    margin-top: 120px
+    position: relative
+    display: flex
+    flex-direction: column
+    &-green
+        background: rgba(54, 179, 126, 0.1)
+        border-radius: 2000px
+        max-width: 102px
+        height: 27px
+        margin-top: -11px
+        margin-left: 0px
+        padding-top: 3px
+        &__text
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+            text-transform: uppercase
+            color: #36B37E
+            margin-left: 15px
+    &__title
+        font-family: 'HK Grotesk'
+        font-feature-settings: "locl" 0
+        font-style: normal
+        font-weight: bold
+        font-size: 49px
+        line-height: 60px
+        letter-spacing: 0.2px
+        color: #183B56
+        margin-top: 28px
+        margin-left: -4px
+        &--visible
+            display: none
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px
+        color: #5A7184
+        max-width: 376px
+        margin-top: -18px
+        margin-left: -5px
+        &--visible
+            display: none
+    &__button
+        position: absolute
+        transform: translateX(-50%)
+        width: 54px
+        height: 56px
+        right: 30%
+        background-repeat: no-repeat
+        background-size: 10px
+        background-position: center
+        outline: none
+        background-color: transparent
+        cursor: pointer
+        z-index: 300
+        margin: 0
+        padding: 0
+        top: 348px
+        &--prev
+            border-radius: 50%
+            background-color: #ffffff
+            background-image: url(../img/prev.svg)
+            background-size: cover
+            background-repeat: no-repeat
+            border: solid 1px #959EAD
+            left: 18px
+        &--next
+            border-radius: 50%
+            background-color: #ffffff
+            background-image: url(../img/next__arrow.svg)
+            background-size: cover
+            background-repeat: no-repeat
+            border: solid 1px #183B56
+            left: 95px
+.new
+    &__button
+        position: absolute
+        transform: translateX(-50%)
+        width: 54px
+        height: 56px
+        right: 30%
+        background-repeat: no-repeat
+        background-size: 10px
+        background-position: center
+        outline: none
+        background-color: transparent
+        cursor: pointer
+        z-index: 300
+        margin: 0
+        padding: 0
+        top: 348px
+        &-prev
+            border-radius: 50%
+            background-image: url(../img/next__mirrow.svg)
+            border: solid 1px #183B56
+            left: 18px
+            background-color: #ffffff
+        &-next
+            border-radius: 50%
+            background-image: url(../img/prev-mirrow.svg)
+            border: solid 1px #959EAD
+            left: 95px
+
+.old
+    &-prev
+        background-image: url(../img/prev.svg)
+        border: solid 1px #959EAD
+        left: 18px
+    &-next
+        background-image: url(../img/next__arrow.svg)
+        border: solid 1px #183B56
+        left: 95px
+.mix
+    overflow: hidden
+    object-fit: cover
+    border-radius: 8px 8px 0 0
+    margin-right: 25px
+    height: 477px
+    &__img
+        overflow: hidden
+        object-fit: cover
+        border-radius: 8px 8px 0 0
+    &-inside
+        position: relative
+        display: flex
+        flex-direction: column
+        z-index: 1000
+        height: 178px
+        background-color: #FAFDFF
+        position: absolute
+        z-index: 10000
+        top: 295px
+        right: 333px
+        width: 312px
+        &__text
+            font-family: 'HK Grotesk'
+            font-feature-settings: "locl" 0
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: #183B56
+            max-width: 260px
+            margin-top: 20px
+            margin-left: 18px
+        &__link
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            color: #1565D8
+            margin-top: 18px
+            margin-left: 19px
+.life
+    overflow: hidden
+    object-fit: cover
+    border-radius: 8px 8px 0 0
+    height: 477px
+    &-inside
+        position: relative
+        display: flex
+        flex-direction: column
+        z-index: 1000
+        height: 178px
+        background-color: #FAFDFF
+        position: absolute
+        z-index: 10000
+        top: 295px
+        right: -5px
+        width: 312px
+        &__text
+            font-family: 'HK Grotesk'
+            font-feature-settings: "locl" 0
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: #183B56
+            max-width: 240px
+            margin-top: 20px
+            margin-left: 20px
+        &__link
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            color: #1565D8
+            margin-top: 18px
+            margin-left: 22px
+.i
+    margin-top: 5px
+.lifehack
+    &__img
+        overflow: hidden
+        object-fit: cover
+        border-radius: 8px 8px 0 0
+// .swiper
+//     &-button
+//         &-disabled
+//             background-image: url(../img/prev.svg)
+//             transform: rotate(180deg)

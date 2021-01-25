@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header header--fixed">
+      <div class="header-container">
+        <div class="header-top">
+          <a href="index.html" class="logo">
+            <img src="img/Logo.png" alt="Logo" />
+          </a>
+          <div class="header-nav header-nav--hidden">
+            <a href="index.html#ready" class="header-link">Главная</a>
+            <a href="index.html#new" class="header-link">Новинки</a>
+            <a href="index.html#trends" class="header-link">Тренды</a>
+            <a href="index.html#reviews" class="header-link">Отзывы</a>
+            <a href="index.html#contacts" class="header-link k">Контакты</a>
+            <button data-toggle="modal" class="header-enter">
+              <span class="header-enter__text">Войти</span>
+            </button>
+            <a href="#" class="header-close"></a>
+          </div>
+          <!-- /.header-nav -->
+          <button class="header-button header__button">
+            <span class="header-button__line"></span>
+            <span class="header-button__line"></span>
+            <span class="header-button__line"></span>
+          </button>
+          <!-- /.header-button -->
+          <!-- /.header-menu -->
+        </div>
+        <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__logo"
+          ><img src="img/Logo.png" alt="Icon: logo"
+        /></a>
+        <a href="" class="modal__close">
+          <img src="img/Path.svg" alt="Icon: close" />
+        </a>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="login"
+            class="input modal__input"
+            placeholder="Логин"
+            name="login"
+            required
+          />
+          <input
+            type="password"
+            class="input modal__input"
+            placeholder="Пароль"
+            name="password"
+            required
+            minlength="9"
+          />
+          <div class="modal__down">
+            <button class="button modal__button" type="submit">Вход</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="thanks-container">
+      <h2 class="thanks__title">
+        Упс!Страница потерялась, вы можете перейти на
+        <a href="index.html" class="main">главную</a>, а мы пока поищем
+        страницу.
+      </h2>
+    </div>
+    <section class="trends">
+      <div class="trends-container">
+        <div class="trends-wrapper">
+          <div class="trends-up">
+            <h2 class="trends__title">Тренды</h2>
+            <ul class="trends-tabs">
+              <li
+                data-target="#news"
+                class="trends-tabs__item trends-tabs__item--active"
+              >
+                Новинки
+              </li>
+              <li data-target="#best" class="trends-tabs__item">Лучшее</li>
+              <li data-target="#soon" class="trends-tabs__item">Скоро</li>
+            </ul>
+            <!-- /.trends-down -->
+          </div>
+          <div class="trends-down">
+            <ul class="content">
+              <li id="news" class="content__item content__item--active">
+                <div class="content__img">
+                  <div class="content__block">
+                    <img
+                      src="img/minimalist.png "
+                      class="content__images"
+                      alt="Photo: Minimalist Style"
+                    />
+                    <span class="content__text">Minimalist Style</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo2">
+                    <img
+                      src="img/luxury.png "
+                      class="content__images"
+                      alt="Photo: Luxury Gown "
+                    />
+                    <span class="content__text t">Luxury Gown </span>
+                    <div class="content__down">
+                      <strong class="price p">$30.6 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping s"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo3">
+                    <img
+                      src="img/full.png"
+                      class="content__images"
+                      alt="Photo: Full Coloristy"
+                    />
+                    <span class="content__text">Full Coloristy</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo4">
+                    <img
+                      src="img/Pinky.png"
+                      class="content__images"
+                      alt="Photo: Pinky Winky"
+                    />
+                    <span class="content__text t">Pinky Winky</span>
+                    <div class="content__down">
+                      <strong class="price p">$109 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping s"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/Holiday.png"
+                      class="content__images"
+                      alt="Photo: Holiday Vibes"
+                    />
+                    <span class="content__text">Holiday Vibes</span>
+                    <div class="content__down">
+                      <strong class="price">$51.2 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo6">
+                    <img
+                      src="img/swaggie.png"
+                      class="content__images"
+                      alt="Photo: Swaggie Shaggy"
+                    />
+                    <span class="content__text t">Swaggie Shaggy</span>
+                    <div class="content__down">
+                      <strong class="price p">$81.3 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping s"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/Red.png"
+                      class="content__images"
+                      alt="Photo: Red Formal"
+                    />
+                    <span class="content__text">Red Formal</span>
+                    <div class="content__down">
+                      <strong class="price">$66.8 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <a href="#" class="content__see">
+                    <img
+                      src="img/see_more.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <a href="#" class="content__see-visible">
+                    <img
+                      src="img/see__more__320.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <!-- /.content__block -->
+                </div>
+                <!-- /.content__img -->
+              </li>
+              <li id="best" class="content__item">
+                <div class="content__img">
+                  <div class="content__block">
+                    <img
+                      src="img/swaggie.png"
+                      class="content__images"
+                      alt="Photo: Swaggie Shaggy"
+                    />
+                    <span class="content__text">Swaggie Shaggy</span>
+                    <div class="content__down">
+                      <strong class="price">$81.3 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo2">
+                    <img
+                      src="img/Pinky.png"
+                      class="content__images"
+                      alt="Photo: Pinky Winky"
+                    />
+                    <span class="content__text">Pinky Winky</span>
+                    <div class="content__down">
+                      <strong class="price">$109 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/minimalist.png "
+                      class="content__images"
+                      alt="Photo: Minimalist Style"
+                    />
+                    <span class="content__text">Minimalist Style</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo4">
+                    <img
+                      src="img/Red.png"
+                      class="content__images"
+                      alt="Photo: Red Formal"
+                    />
+                    <span class="content__text">Red Formal</span>
+                    <div class="content__down">
+                      <strong class="price">$66.8 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/luxury.png "
+                      class="content__images"
+                      alt="Photo: Luxury Gown "
+                    />
+                    <span class="content__text">Luxury Gown </span>
+                    <div class="content__down">
+                      <strong class="price">$30.6 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo6">
+                    <img
+                      src="img/full.png"
+                      class="content__images"
+                      alt="Photo: Full Coloristy"
+                    />
+                    <span class="content__text">Full Coloristy</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/Holiday.png"
+                      class="content__images"
+                      alt="Photo: Holiday Vibes"
+                    />
+                    <span class="content__text">Holiday Vibes</span>
+                    <div class="content__down">
+                      <strong class="price">$51.2 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <a href="#" class="content__see">
+                    <img
+                      src="img/see_more.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <a href="#" class="content__see-visible">
+                    <img
+                      src="img/see__more__320.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <!-- /.content__block -->
+                </div>
+              </li>
+              <li id="soon" class="content__item">
+                <div class="content__img">
+                  <div class="content__block">
+                    <img
+                      src="img/Red.png"
+                      class="content__images"
+                      alt="Photo: Red Formal"
+                    />
+                    <span class="content__text">Red Formal</span>
+                    <div class="content__down">
+                      <strong class="price">$66.8 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo2">
+                    <img
+                      src="img/luxury.png "
+                      class="content__images"
+                      alt="Photo: Luxury Gown "
+                    />
+                    <span class="content__text">Luxury Gown </span>
+                    <div class="content__down">
+                      <strong class="price">$30.6 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/Holiday.png"
+                      class="content__images"
+                      alt="Photo: Holiday Vibes"
+                    />
+                    <span class="content__text">Holiday Vibes</span>
+                    <div class="content__down">
+                      <strong class="price">$51.2 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo4">
+                    <img
+                      src="img/swaggie.png"
+                      class="content__images"
+                      alt="Photo: Swaggie Shaggy"
+                    />
+                    <span class="content__text">Swaggie Shaggy</span>
+                    <div class="content__down">
+                      <strong class="price">$81.3 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/Pinky.png"
+                      class="content__images"
+                      alt="Photo: Pinky Winky"
+                    />
+                    <span class="content__text">Pinky Winky</span>
+                    <div class="content__down">
+                      <strong class="price">$109 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block photo6">
+                    <img
+                      src="img/full.png"
+                      class="content__images"
+                      alt="Photo: Full Coloristy"
+                    />
+                    <span class="content__text">Full Coloristy</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <div class="content__block">
+                    <img
+                      src="img/minimalist.png "
+                      class="content__images"
+                      alt="Photo: Minimalist Style"
+                    />
+                    <span class="content__text">Minimalist Style</span>
+                    <div class="content__down">
+                      <strong class="price">$25.7 </strong>
+                      <img
+                        src="img/shopping-cart.svg"
+                        class="shopping"
+                        alt="Icon: shopping-cart"
+                      />
+                    </div>
+                    <!-- /.content__down -->
+                  </div>
+                  <a href="#" class="content__see">
+                    <img
+                      src="img/see_more.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <a href="#" class="content__see-visible">
+                    <img
+                      src="img/see__more__320.png"
+                      class="content__images"
+                      alt="Photo: see_more"
+                    />
+                  </a>
+                  <!-- /.content__block -->
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.trends-up -->
+        </div>
+        <!-- /.trends-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__info">
+          <div class="footer-left">
+            <img
+              src="img/logo__footer.png"
+              class="footer__logo"
+              alt="Photo: Logo"
+            />
+            <div class="footer-text">
+              <span class="footer__text"
+                >Интернет-магазин брендовой одежды с оплатой онлайн</span
+              >
+            </div>
+            <div class="footer__links">
+              <a
+                target="_blank"
+                href="https://www.google.com/"
+                class="footer__links-img"
+                ><img src="img/google.svg" alt="Icon: google"
+              /></a>
+              <a
+                target="_blank"
+                href="https://twitter.com/?lang=ru"
+                class="footer__links-img"
+                ><img src="img/twiter.svg" alt="Icon: twiter"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/burmatov02/"
+                class="footer__links-img"
+                ><img src="img/instagram.svg" alt="Icon: instagram"
+              /></a>
+              <a
+                target="_blank"
+                href="https://tass.ru/ekonomika/4573787"
+                class="footer__links-img"
+                ><img src="img/in.svg " alt="Icon: in"
+              /></a>
+            </div>
+          </div>
+          <div class="navigation">
+            <h2 class="navigation__title">Навигация</h2>
+            <ul class="navigation-list">
+              <li class="navigation-list__link">
+                <a class="navigation-list__link-s" href="index.html#news"
+                  >Новая коллекция</a
+                >
+              </li>
+              <li class="navigation-list__link">
+                <a class="navigation-list__link-s" href="index.html#trends"
+                  >Трендовая одежда</a
+                >
+              </li>
+              <li class="navigation-list__link">
+                <a class="navigation-list__link-s" href="index.html#fashun"
+                  >Истории Fashun</a
+                >
+              </li>
+              <li class="navigation-list__link">
+                <a class="navigation-list__link-s" href="index.html#reviews"
+                  >Отзывы клиентов</a
+                >
+              </li>
+              <li class="navigation-list__link">
+                <a class="navigation-list__link-s" href="index.html#trends"
+                  >Вся одежда</a
+                >
+              </li>
+            </ul>
+            <!-- /.navigation-list -->
+          </div>
+          <div class="service">
+            <h2 class="service__title">Сервисы</h2>
+            <ul class="service-list">
+              <li class="service-list__link">
+                <a class="service-list__link-s" href="#">Рассрочка на 6 мес</a>
+              </li>
+              <li class="service-list__link">
+                <a class="service-list__link-s" href="#">Кредит на 12 мес</a>
+              </li>
+              <li class="service-list__link">
+                <a class="service-list__link-s" href="#">Доставка по РФ</a>
+              </li>
+              <li class="service-list__link">
+                <a class="service-list__link-s" href="#">Возврат покупок</a>
+              </li>
+              <li class="service-list__link">
+                <a class="service-list__link-s" href="#">Акции и кэшбек</a>
+              </li>
+            </ul>
+          </div>
+          <div class="company">
+            <h2 class="company__title">Компания</h2>
+            <ul class="company-list">
+              <li class="company-list__link">
+                <a class="company-list__link-s" href="#">Об Ehya</a>
+              </li>
+              <li class="company-list__link">
+                <a class="company-list__link-s" href="#">Правила сайта</a>
+              </li>
+              <li class="company-list__link">
+                <a class="company-list__link-s" href="#">Обработка данных</a>
+              </li>
+              <li class="company-list__link">
+                <a class="company-list__link-s" href="#">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts" id="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts-list">
+              <li class="contacts-list__link">
+                <a
+                  class="contacts-list__link-s"
+                  target="_blank"
+                  href="https://www.facebook.com/"
+                  >Группа Фейсбук</a
+                >
+              </li>
+              <li class="contacts-list__link">
+                <a
+                  class="contacts-list__link-s"
+                  target="_blank"
+                  href="https://www.youtube.com/"
+                  >Канал Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+    <a href="#" class="to-top">
+      <img src="img/return.png" alt="Photo: return" />
+    </a>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
