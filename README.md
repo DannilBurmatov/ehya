@@ -10,4 +10,4 @@ Ehya
 
 Виталий Моренко
 
-https://burmatovs-page.ru/ehya/
+https://salpuga.github.io/ehya.github.io/
